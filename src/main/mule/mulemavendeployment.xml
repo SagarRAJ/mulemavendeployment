@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="mulemavendeploymentFlow" doc:id="6713e582-c93f-40ff-91f1-09dba5440c6c" >
 		<http:listener doc:name="Listener" doc:id="d0c785f7-623e-4907-b2be-f665c9ae8bcc" config-ref="HTTP_Listener_config" path="/welcome"/>
-		<set-payload value='#["Welcome to the mule maven deployment updated"]' doc:name="Set Payload" doc:id="54947adb-ba85-4142-ba0a-962329d2d7bd" />
+		<set-payload value='#["Welcome to the mule maven deployment updated."]' doc:name="Set Payload" doc:id="54947adb-ba85-4142-ba0a-962329d2d7bd" />
 		<logger level="INFO" doc:name="Logger" doc:id="ec1f18ba-8bc6-4515-a7ac-2103fc67d0ba" message="#[payload]"/>
 	</flow>
 </mule>
